@@ -1,0 +1,142 @@
+.footer{
+    display: flex;
+    background-color: $bold;
+    padding: 110px 80px 80px;
+    &-heading{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+        color: $background;
+    }
+
+    &-desc{
+        color: #a9a9a9;
+        font-size: 1.4rem;
+        line-height: 25px;
+        margin-bottom: 35px;
+    }
+    &-contact{
+        width: 25%;
+        &-desc{
+            color: #a9a9a9;
+            font-size: 1.7rem;
+            margin-bottom: 18px;    
+            line-height: 25px;
+        }
+        &-infor{
+            display: flex;
+            flex-direction: column;
+            &-item{
+                text-decoration: none;
+                color: $background;
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+                transition: color 0.15s linear;
+                &:hover{
+                    color: $blue;
+                }
+            }
+            &-icon{
+                font-size: 2rem;
+                margin-right: 14px;
+            }
+        }
+    }
+
+    &-post{
+        width: 25%;
+        color: $background;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 35px;
+            font-size: 1.4rem;
+            &-place{
+                color: #a9a9a9;
+                margin-bottom: 15px;
+                transition: color 0.15s linear;
+                &:hover{
+                    color: $blue;
+                    cursor: pointer;
+                }
+            }
+            &-time{
+                transition: color 0.15s linear;
+                &:hover{
+                    color: $blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &-subcribe{
+        width: 25%;
+        &-input{
+            width: 100%;
+            height: 50px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        &-icon{
+            position: absolute;
+            font-size: 18px;
+            color: $background;
+            left: 20px;
+            top: 15px;
+        }
+        &-form{
+            height: 50px;
+            width: 100%;
+            font-size: 1.4rem;
+            background-color: #595959;
+            padding: 0;
+            padding-left: 46px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+        }
+        &-form::placeholder { 
+            color: $background;
+        }
+
+        &-btn{
+            height: 50px;
+            width: 100%;
+            background-color: $blue;
+            color:$background;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 2px;
+            text-transform: uppercase;
+            transition: all 0.2s linear;
+            &:hover{
+                background-color: $background;
+                color: $bold;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-ins{
+        padding: 0 15px;
+        width: 25%;
+    }
+
+    &-end{
+        color: #a9a9a9;
+        background-color: $bold;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 1.4rem;
+        &-link{
+            text-decoration: none;
+            color: $background;
+            transition: color 0.15s linear;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+$background: #fff;
+$text: #5e5e5e;
+$bold: #212121;
+$blue: #3fd0d4;
+$heightLink: 37px;
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+    background-color: $background;
+    width: 100%;
+    max-width: 1903px;
+}
+
+p{
+    margin: 0;
+}
+
+.wrap{
+    overflow: hidden;
+}
+.current{
+    color: $blue !important;
+}
+
+.wrap-title{
+    display: inline-block;
+}
+
+.wrap-title:hover .menu-title::after{
+    width: 100%;
+}
+
+.wrap-title:hover .menu-title{
+    color: $blue !important;
+}
+
+.menu-title{
+    margin: 0;
+    transition: color 0.2s ease-out;
+    position: relative;
+    text-transform: capitalize;
+    &::after{
+        content: "";
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        background-color: $blue;
+        transition: width 0.25s ease-out;
+    }
+}

@@ -1,0 +1,76 @@
+.map{
+    z-index: 1;
+    background-color: $background;
+    display: flex;
+    margin: 0 -10px;
+    // overflow: hidden;    
+    &-item{
+        overflow: hidden;
+        z-index: 1;
+        margin: 20px 10px;
+        // box-shadow: 
+    }
+    &-img{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        &:hover{
+            cursor: pointer;
+            animation: zoomIn 1s linear forwards;
+        }
+    }
+
+    &-pagination{
+        background-color: $background;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        &-item{
+            height: 12px;
+            width: 12px;
+            opacity: 0.6;
+            background-color: $blue;
+            margin-right: 20px;
+            border-radius: 50%;
+            transition: opacity 0.2s linear;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.intro-bar{
+    display: flex;
+    background-color: $blue;
+    color: $background;
+    font-size: 1.5rem;
+    padding: 10px 0 10px 24px;
+    font-weight: 400;
+    &-item{
+        margin-right: 20px;
+    }
+}
+
+.desc{
+    padding: 30px 25px;
+    font-size: 1.4rem;
+    box-shadow: 5px 8px 13.92px 2.08px rgb(0, 0, 0, 0.06);
+    &-heading{
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
+    &-lorem{
+        margin: 15px 0;
+    }
+    &-bottom{
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        &-item{
+            margin: 5px 20px 0 0;
+        }
+    }
+}

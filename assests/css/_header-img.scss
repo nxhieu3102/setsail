@@ -1,0 +1,78 @@
+.header-img{
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img{
+    display: block;
+    height: 420px;
+    width: 100%;
+    animation: zoomIn 4s ease-in-out;
+    animation-fill-mode: forwards;
+    object-fit: cover;
+    background-size: cover;
+    @keyframes zoomIn {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.05, 1.05);
+        }
+      }
+    &-text{
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: $background;
+        width: 100%;
+        &-first{
+            font-size: 5rem;
+            font-family: Satisfy, cursive;
+            margin: 0;
+        }
+        &-second{
+            font-size: 11rem;
+            font-weight: 600;
+            margin: 0;
+            line-height: 11rem;
+        }
+        &-third{
+            padding-top: 30px;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+    }
+}
+
+.button{
+    z-index: 1;
+    font-size: 2.5rem;
+    background-color: $background;
+    color: $blue;
+    position: absolute;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 43%;
+    cursor: pointer;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    &-previous{
+        left: 25px;
+    }
+
+    &-next{
+        right: 25px;
+    }
+
+    &:hover{
+        color: $background;
+        background-color: $blue;
+    }
+}
+

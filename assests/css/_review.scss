@@ -1,0 +1,74 @@
+.review{
+    background-image: url(../img/review.jpg);
+    height: 676px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 125px;
+    text-align: center;
+    &-heading{
+        color: $background;
+        padding-top: 120px;
+    }
+    
+    &-title{
+        font-size: 6rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    &-subtitle{
+        font-size: 1.8rem;
+        margin: 0;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    &-pagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+
+.reviewer{
+    display: flex;
+    justify-content: space-between;
+    margin: 33px -20px 0;
+    // overflow: hidden;
+    &-section{
+        display: flex;
+        background-color: $background;
+        border-radius: 5px;
+        padding: 40px 58px;
+        margin: 0 20px;
+    }
+    &-info{
+        margin-left: 25px;
+        text-align: left;
+        text-decoration: none;
+    }
+    &-place{
+        transition: color 0.2s linear;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        &:hover{
+            color: $blue;
+            cursor: pointer;
+        }
+    }
+    &-rate{
+        font-size: 1.5rem;
+        color: $blue;
+        margin: 5px;
+    }
+    &-comment{
+        font-size: 1.5rem;
+        color: #505050;
+    }
+    &-name{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
